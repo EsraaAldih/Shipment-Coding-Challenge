@@ -8,8 +8,8 @@
 </p>
 
 ## About Setup Laravel project after cloning
-<ul><>
-<li>  run <bold> composer install </bold"> generate depedencies in vendor folder
+<ul>
+<li>  run <bold> composer install </bold"><p>  to  generate depedencies in vendor folder</p>
 </li>
 <li> change <bold>.env.example</bold"> to <bold>.env</bold"> OR Run <bold> cp .env.example .env </bold">
 </li>
