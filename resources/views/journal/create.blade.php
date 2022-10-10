@@ -18,7 +18,7 @@
 
                     <thead>
                         <tr class="bg-light">
-                            <th scope="col" width="5%">#</th>
+                            <th scope="col" width="5%"><i class="fa fa-check-circle-o green"></i><span class="ms-1"></th>
                             <th scope="col" width="10%">Tracking Number</th>
                             <th scope="col" width="10%">Status</th>
                             <th scope="col" width="20%">Shipper Name</th>
@@ -31,18 +31,15 @@
                         @foreach ($shipments as $shipment)
                             @if (!$shipment->journal_id && $shipment->status == 'done')
                                 <tr>
-                                    <td><i class="fa fa-check-circle-o green"></i><span class="ms-1">
+                                    <td>
                                             <input type="checkbox" id="inlineCheckbox1" name="unPaid_shipments[]"
                                                 value="{{ $shipment->id }}">
 
                                         </span></td>
                                     <td class="text-start"> {{ $shipment->code }}</td>
-                                    <td class="text-start"><span class="fw-bolder">{{ $shipment->status }}</span> <i
-                                            class="fa fa-ellipsis-h  ms-2"></i></td>
-                                    <td class="text-start"><span class="fw-bolder">{{ $shipment->shipper_name }}</span> <i
-                                            class="fa fa-ellipsis-h  ms-2"></i></td>
-                                    <td class="text-start"><span class="fw-bolder">{{ $shipment->created_at }}</span> <i
-                                            class="fa fa-ellipsis-h  ms-2"></i></td>
+                                    <td class="text-start"><span class="fw-bolder">{{ $shipment->status }}</span></td>
+                                    <td class="text-start"><span class="fw-bolder">{{ $shipment->shipper_name }}</span> </td>
+                                    <td class="text-start"><span class="fw-bolder">{{ $shipment->created_at }}</span> </td>
 
 
                                 </tr>
@@ -54,7 +51,7 @@
                 </table>
                 @if ($shipments)
 
-                <div class="col-md-12 form-group">
+                <div class="col-md-12 form-group ">
                     <button class="btn pull-right btn-info" type="submit">Create</button>
                 </div>
                 @endif

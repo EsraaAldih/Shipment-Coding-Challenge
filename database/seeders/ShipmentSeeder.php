@@ -51,12 +51,34 @@ class ShipmentSeeder extends Seeder
         Shipment::create([
             'code' => Str::random(8),
             'shipper_name' => 'Ali',
+            'weight' => 45,
+            'status' => 'done',
+            'price' => 300,
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+            'image'=>'',
+            'journal_id' => 1
+
+                        
+        ]);   
+        Shipment::create([
+            'code' => Str::random(8),
+            'shipper_name' => 'Asmaa',
             'weight' => 20,
             'status' => 'done',
             'price' => 100,
             'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
             'image'=>'',
-            'journal_id' => 1
+
+                        
+        ]);   
+        Shipment::create([
+            'code' => Str::random(8),
+            'shipper_name' => 'Hadeer',
+            'weight' => 100,
+            'status' => 'done',
+            'price' => 300,
+            'description' => 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry',
+            'image'=>'',
 
                         
         ]);   

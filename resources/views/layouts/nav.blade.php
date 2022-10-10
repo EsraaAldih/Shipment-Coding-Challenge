@@ -3,7 +3,7 @@
 
  <nav class="main-navigation bg-light mb-1 px-2 ">
         <div class="navbar-header animated fadeInUp">
-            <a class="navbar-brand" href="#"> <i class="bi bi-truck font-large-2 float-left"></i>S M S</a>
+            <a class="navbar-brand" href="{{route('home')}}"> <i class="bi bi-truck font-large-2 float-left"></i>S M S</a>
         </div>
         <ul class="nav-list text-primary">
             <li class="nav-list-item">

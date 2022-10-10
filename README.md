@@ -8,11 +8,18 @@
 </p>
 
 ## About Setup Laravel project after cloning
-
-1 : run <h2> composer install </h2>composer install to generate depedencies in vendor folder
-2 : change <h2>.env.example</h2> to <h2>.env</h2> OR Run <h2> cp .env.example .env </h2>
-3 : run <h2>php artisan key:generate </h2>
-4 : In the .env file, add database information to allow Laravel to connect to the database
-5 : run <h2>php artisan migrate </h2>
-6 : run <h2>php artisan db:seed </h2>
-7 : run <h2>php artisan serve </h2>
+<ul>
+<li>  run <h6> composer install </h6>composer install to generate depedencies in vendor folder
+</li>
+<li> change <h6>.env.example</h6> to <h6>.env</h6> OR Run <h6> cp .env.example .env </h6>
+</li>
+<li> run <h6>php artisan key:generate </h6>
+</li>
+<li> In the .env file, add database information to allow Laravel to connect to the database
+</li>
+<li> run <h6>php artisan migrate </h6>
+</li>
+<li> run <h6>php artisan db:seed </h6>
+</li>
+<li> run <h6>php artisan serve </h6></li>
+</ul>
